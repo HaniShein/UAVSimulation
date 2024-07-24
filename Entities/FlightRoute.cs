@@ -50,6 +50,7 @@ namespace Entities
             _targetLocation = targetLocation;
             
             _fly = FlyFactory.CreateFly(FlyType.Straight, _uav);
+            _distanceIncreased = 0;
         }
 
         public void MoveForward(float dtParam, float cycleTime) 
